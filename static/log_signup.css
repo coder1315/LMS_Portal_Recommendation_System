@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+.container .main-image{
+    width: 100%;
+    max-width: 800px;
+}
+.container .main-image > img{
+    width: 100%;
+}
+
+.container .login-box{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 0px black;
+    background-color: white;
+    padding: 20px;
+}
+
+.container .login-box > .login_form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.container .login-box > .login_form input{
+    padding: 10px;
+    width: 100%;
+}
+.container .login-box > .login_form a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #4a4a4a;
+    line-height: 40px;
+}
+.signup{
+    display: flex;
+    margin: 10px 0px;
+}
+
+@media (max-width:1000px) {
+    .main-image{
+        display: none;
+    }
+}

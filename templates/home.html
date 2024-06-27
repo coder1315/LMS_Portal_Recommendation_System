@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECOMMEND.AI</title>
+    <link rel="icon" href="/static/project img/assets.42.png">
+     <link rel="stylesheet" href="/static/home.css"> 
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> -->
+     <!-- Latest compiled and minified CSS -->
+
+</head>
+<body>
+    <div class="header-container">
+            <nav class="navbar">
+                <div class="LFC">
+                    
+            
+                </div>
+                <div class="nav-links">
+                    <ul class="flex">
+    
+                        <li><a href="/home"class="hover-links">Home</a></li>
+                        <li><a href="/recommend" class="hover-links">Books</a></li>
+                        <li><a href="/courses" class="hover-links">Courses</a></li>
+                        
+                    </ul>
+                    
+                </div>
+
+                <div class="RHC">
+                    
+                    <li><a href="/logout">Logout</a></li>
+                </div>
+            </nav>
+    </div>
+    <main>
+        <div class="banner">
+            <img id="banner-img" src="/static/project img/banner.jpg" alt="banner-image">
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 books">
+                    <h1 class="top_books" style="font-size:45px">Top 20 Books</h1>
+                </div>
+                {% for i in range(book_name|length) %}
+                <div class="col-md-3" style="margin-top:50px">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="{{ image[i] }}">
+                            <p class="text-white">{{ book_name[i] }}</p>
+                            <p class="text-white">{{ author[i] }}</p>
+                            <p class="text-white">Votes - {{ votes[i] }}</p>
+                            <p class="text-white">Rating - {{ rating[i] }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+       
+    </main>
+</body>
+
+</html>

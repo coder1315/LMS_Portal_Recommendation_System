@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.hover-links{
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+.hover-links:hover{
+    color:var(--accent-color);
+}
+.nav-links{
+    flex-basis: 730px;
+    margin-top: 30px;
+    
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+
+
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+body{
+    background-color: #f6f6f6;
+}
+
+
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 75px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /* background: #9a5454; */
+    
+}
+
+#img{
+    /* width: 100%; */
+    max-width: 300px;
+    margin-top: 2px;
+    margin-left: -54px;
+}
+
+.RHC li{
+    background: #a864d9;
+    width: 120px;
+    height: 43px;
+    display: inline-block;
+    align-self: center;
+    margin-top: 15px;
+    margin-right: -58px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+}
+
+.RHC li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bolder;
+
+
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.RHC :hover{
+    background-color: #8203dc;
+    transition: 0.3s ease-in-out;
+  
+}
+
+.header-container{
+    /* border-bottom: 2px solid black;
+    box-shadow: 0 0 2px solid black; */
+    box-shadow: rgba(157, 157, 157, 0.2) 0px 4px 10px;
+}
+#banner-img{
+    width: 100%;
+    height: 340px;
+    padding: 3px 85px;
+}
+
+.top_books{
+    color:black
+    
+    
+   
+}
+.books{
+    margin-top: 16px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.card-body{
+    box-sizing: border-box;
+    box-shadow:rgba(18, 17, 17, 0.6) 0px 4px 10px;
+    padding-left: 7px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+p{
+    font-size: o.2rem;
+}
+h4{
+    font-size: 0.2rem;
+}
+#book_banner-img{ width: 100%;
+    height: 340px;
+    padding: 3px 85px;
+}

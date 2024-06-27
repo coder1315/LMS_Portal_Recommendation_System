@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECOMMEND.AI</title>
+    <link async rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap"> 
+    <!-- <link rel="stylesheet" href="/static/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="/static/project img/assets.42.jpg">
+
+</head>
+<body>
+    <div class="header-container">
+            <nav class="navbar">
+                <div class="LFC">
+                    <img src="/static/project img/logo.jpg" alt="logo">
+            
+                </div>
+                <div class="RHC">
+                   <li><a href="{{ url_for('login') }}">Login</a></li> 
+                   <li><a href="{{ url_for('signup') }}">Sign-up</a></li>
+                </div>
+            </nav>
+    </div>
+    <main>
+        <div class="welcome">
+            <h1>Welcome !</h1>
+            <p class="thought">" Maximize Your Learning Experience with Expert Recommendations. "</p>
+        </div>
+        <div class="main-image">
+            <img src="/static/project img/front.jpeg" alt="Home-image" class="Home-image">
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="icon" href="/static/project img/assets.42.jpg">                                
+    <link rel="stylesheet" href="{{ url_for('static', filename='log_signup.css') }}">
+    <link async rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap"> 
+    <title>Wayout doubts</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="main-image">
+            <img src="/static/project img/loginimg.jpeg" alt="login">
+            </div>
+            <div class="login-box">
+                <h1 class="log">Sign-up</h1>
+                    <form class="login_form" method="post" action="add_user">
+                        <input type="text" placeholder="Enter Your Name" name="aname">   
+                        <label for="email" placeholder="Enter your mail"></label>
+                        <input type="email" id="email" placeholder ="Enter your mail" name="aemail">   
+                        <input type="password" placeholder="Password" name="apassword">   
+                        <input class="login" type="submit" value="Sing-up" >   
+                        <a class="back" href="/">⬅ Back</a>
+                    </form>
+                     <div class="signup">
+                    <p>Already have an account?</p>
+                    <a href="{{url_for('login')}}">Login</a>
+                     </div>
+        
+       
+    </div>
+    
+</body>
+</html>
